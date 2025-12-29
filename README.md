@@ -1,5 +1,5 @@
 # fashion-vault
-closet inventory and outfit design app, extending my fashion with programming, imagine clueless but better
+Closet inventory and outfit design app, extending my fashion with programming, imagine clueless but better
 
 FashionVault is a personal wardrobe management and outfit design web application.  
 It allows users to upload clothing items, organize them into an inventory, and visually design outfits by placing items onto a model.
