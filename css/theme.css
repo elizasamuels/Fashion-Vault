@@ -1,0 +1,41 @@
+:root {
+  --pink: #ac3973;
+  --light_pink: #db97ba;
+  --orange: #ffa31a;
+  --lavender: #b3b3ff;
+  --teal: #009999;
+  --bg: #f9f9f9;
+  --text: #333;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--light_pink);
+  text-align: center;
+  color: var(--text);
+  margin: 0;
+}
+
+nav {
+  background: var(--pink);
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  margin-right: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+button {
+  background: var(--pink);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.card {
+  border: 2px solid var(--lavender);
+  padding: 0.5rem;
+}

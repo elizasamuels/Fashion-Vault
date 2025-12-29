@@ -1,0 +1,61 @@
+<head>
+  <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+  <nav>
+    <a href="inventory.html">Inventory</a>
+    <a href="design.html">Design</a>
+  </nav>
+
+  <h1>My Personal Closet</h1>
+  <p>Manage outfits and design looks.</p>
+
+    <p>Add Items Here!!</p>
+    <input id="name" placeholder="Item name">
+    <select name="types" id="type">
+        <option value="">Type:</option>
+        <option value="shirt">Shirt</option>
+        <option value="dress">Dress</option>
+        <option value="jacket">Jacket</option>
+        <option value="pants">Pant</option>
+        <option value="skirt">Skirt</option>
+        <option value="short">Short</option>
+        <option value="socks">Socks</option>
+        <option value="gloves">Gloves</option>
+        <option value="scarf">Scarf</option>
+        <option value="belt">Belt</option>
+        <option value="glasses">Glasses</option>
+        <option value="ring">Ring</option>
+        <option value="bracelet">Bracelet</option>
+        <option value="necklace">Necklace</option>
+        <option value="earrings">Earrings</option>
+        <option value="shoes">Shoes</option>
+    </select>
+
+    <select name="styles" id="style">
+        <option value="">Style:</option>
+        <option value="casual">Casual</option>
+        <option value="business">Business</option>
+        <option value="going-out">Going Out</option>
+        <option value="fierce">Fierce</option>
+        <option value="accessory">Accessory</option>
+    </select>
+    <input id="image" type="file">
+    <p></p>
+
+    <button onclick="addItem()">Save Item</button>
+    <hr>
+
+    <select onchange="applyFilters()" id="typeFilter">
+    <option value="">All Types</option>
+    </select>
+
+    <select onchange="applyFilters()" id="styleFilter">
+    <option value="">All Styles</option>
+    </select>
+
+    <div id="inventoryGrid"></div>
+
+    <script src="js/data.js"></script>
+    <script src="js/inventory.js"></script>
+</body>
