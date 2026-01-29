@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Items</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/add.css">
+
+</head>
+<body>
+    <header class="main-header">
+        <h1 class="logo">Add Items</h1>
+    </header>
+    <div id="add-form-div">
+        <form>
+            <!-- Name of Item -->
+            <label for="inputItemName">Item Name</label><br>
+            <input type="text" class="form-control" id="inputItemName" name="inputItemName" placeholder="Enter item name here"><br>
+            <!-- Category -->
+            <label for="inputCategory">Category</label><br>
+            <input type="text" id="inputCategory" name="inputCategory" placeholder="Enter category here"><br>
+            <!-- Subcategory (if any) -->
+            <label for="inputSubcategory">Subcategory</label><br>
+            <input type="text" id="inputSubcategory" name="inputSubcategory" placeholder="Enter subcategory here (if any)"><br>
+            <!-- Color -->
+            <label for="inputColor">Color</label><br>
+            <input type="text" id="inputColor" name="inputColor" placeholder="Enter color here"><br>
+            <!-- Size -->
+            <label for="inputSize">Size:</label><br>
+            <input type="text" id="inputSize" name="inputSize" placeholder="Enter size here"><br>
+            <!-- <button type="submit">Submit</button> -->
+            <button type="submit" value="Send file">Upload</button>
+            <button type="button" onclick="location.href='index.html'">Return to Home Page</button>
+        </form>
+    </div>
+    <form id="dropbox" name="uploadForm" action="#">
+      <div >
+        <div>Drop photos here or use the Browse button below</div>
+      </div>
+      <div>
+        <input id="uploadInput" type="file" multiple aria-label="Upload Input">
+        <label for="fileNum">Selected files:</label>
+        <output id="fileNum">0</output>;
+        <label for="fileSize">Total size:</label>
+        <output id="fileSize">0</output>
+      </div>
+    </form>
+    <h2 id="output">Output</h2>
+    <div id="preview"></div>
+    <script src="scripts/fileLoader.js"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #AB644B;
+    padding: 0;
+}
+
+.logo {
+    font-size: 3rem;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+button, .btn {
+    cursor: pointer;
+    border: none;
+    padding: 0.5rem 1.25rem;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.main-nav .nav-list {
+    display: flex;
+    gap: 1.5rem;
+}
+
+
+.nav-label {
+    background-color: #AB644B;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 2rem;
+    padding-right: 1rem;
+    color: black;
+}
+
+.parent {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto repeat(6, 1fr);
+    gap: 0;
+}
+
+.navdiv {
+    grid-column: span 6 / span 6;
+    background-color: #AB644B;
+}
+
+.div2 {
+    grid-column: span 2 / span 2;
+    grid-row: span 5 / span 5;
+    grid-row-start: 2;
+    background-color: #F1F3F4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.div3 {
+    display: flex;
+    justify-content: space-around;
+    grid-column: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 7;
+    background-color: #72383D;
+}
+
+.div4 {
+    grid-column: span 4 / span 4;
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    background-color: #D2DCE6;
+    position: relative;
+}
+
+.side-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.left-button {
+    left: 0;
+}
+
+.right-button {
+    right: 0;
+}
+
+.div2 img {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+} 
+
+.div5 {
+    grid-column: span 4 / span 4;
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 4;
+    background-color: #9CABB4;
+    position: relative;
+}
+
+.div6 {
+    grid-column: span 4 / span 4;
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 6;
+    background-color: #647687;
+    position: relative;
+}
+
+.lower-button {
+    background-color: #72383D;
+    color: #F1F3F4;
+    font-size: 1.5rem;
+}
+
+.carousel-item img {
+    height: 12rem;
+    object-fit: contain;
+}
+
+#dropbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10rem;
+    min-width: 10rem;
+    border: 1rem dashed black;
+  }
+  #preview {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    border: 1rem solid black;
+    min-height: 10rem;
+  }
+  
+  .obj img {
+    max-width: 10rem;
+    max-height: 10rem;
+    object-fit: contain;
+  }
+  
+  .obj {
+    border: 1px dotted black;
+  }
+
+  @media (max-width: 886px) {
+
+    .parent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .main-nav {
+        background-color: #72383D;
+        width: 100%;
+        flex: 1 1 auto; /* trying to get the text to be even across the page (not working)*/
+        color: #F1F3F4; /*font color not changing.. why!?*/
+    }
+  }
+
+  #weatherDiv {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #9CABB4;
+    padding: 10px;
+    font-family:'Times New Roman', Times, serif;
+}
+
