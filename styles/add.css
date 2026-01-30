@@ -13,26 +13,22 @@ body {
   grid-template-columns: auto auto;
 }
 
-.navdiv {
+/* .navdiv {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: var(--darkest);
     background-color: var(--color1);
     padding: 0;
-}
+    width: 100vw;
+} */
 
-.main-header {
+
+header {
   grid-column-start: 1;
   grid-column-end: 3;
   display: flex;
   justify-content: center;
-}
-
-
-.main-nav {
-  color: white;
-  align-self:flex-end;
 }
 
 #add-form-div {
