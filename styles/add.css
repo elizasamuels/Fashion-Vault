@@ -3,7 +3,7 @@ You may do this in a variety of ways. For example, you can move images or switch
 div {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    /* height: 100vh; */
     margin: 0;
     font-family: sans-serif;
 }
@@ -13,11 +13,26 @@ body {
   grid-template-columns: auto auto;
 }
 
+.navdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--darkest);
+    background-color: var(--color1);
+    padding: 0;
+}
+
 .main-header {
   grid-column-start: 1;
   grid-column-end: 3;
   display: flex;
   justify-content: center;
+}
+
+
+.main-nav {
+  color: white;
+  align-self:flex-end;
 }
 
 #add-form-div {
@@ -26,7 +41,7 @@ body {
     padding: 20px;
     /* border: 1px solid #ccc;
     border-radius: 10px; */
-    background-color: #9CABB4;
+    background-color: var(--color5);
     grid-row: 2 / span 2;
 }
 
@@ -36,16 +51,19 @@ body {
     align-items: center;
     min-height: 10rem;
     min-width: 10rem;
-    border: 1rem dashed black;
+    padding: 4rem;
+    border: 0.5rem dashed var(--darkest);
     grid-column: 2 /span 1;
     grid-row: 2 / span 2;
   }
+
   #preview {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
-    border: 1rem solid black;
+    border: 1rem solid var(--darkest);
     min-height: 10rem;
+    
     grid-column: 1 / span 2;
   }
   

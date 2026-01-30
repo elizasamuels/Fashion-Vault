@@ -1,3 +1,10 @@
 div {
     font-family:'Times New Roman', Times, serif;
 }
+
+/* .title { added in styles.css
+    text-align: center;
+    background-image:url("images/styling/orange_sequins.jpg");
+    background-size: cover; 
+    background-position: center;
+} */

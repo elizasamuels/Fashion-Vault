@@ -9,9 +9,14 @@
 
 </head>
 <body>
-    <header class="main-header">
-        <h1 class="logo">Add Items</h1>
-    </header>
+    <div class="navdiv">
+      <header class="main-header">
+        <a class="logo" href="index.html">Fashion Vault</a>
+        <nav class="main-nav">
+          <!-- Styling isnt allowing nav links  -->
+        </nav>
+      </header>
+    </div>
     <div id="add-form-div">
         <form>
             <!-- Name of Item -->
@@ -36,13 +41,13 @@
     </div>
     <form id="dropbox" name="uploadForm" action="#">
       <div >
-        <div>Drop photos here or use the Browse button below</div>
+        <div>Drop photos or Browse</div>
       </div>
       <div>
         <input id="uploadInput" type="file" multiple aria-label="Upload Input">
-        <label for="fileNum">Selected files:</label>
-        <output id="fileNum">0</output>;
-        <label for="fileSize">Total size:</label>
+        <label for="fileNum">Selected files: </label>
+        <output id="fileNum">0 </output> ;
+        <label for="fileSize">Total size: </label>
         <output id="fileSize">0</output>
       </div>
     </form>

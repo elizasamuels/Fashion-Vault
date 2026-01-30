@@ -1,3 +1,16 @@
+/* -------------------
+   ROOT VARIABLES
+-------------------- */
+:root {
+  --color1: #ead7e4;
+  --color2: #845c78;
+  --color3: #68405c; /* #502a50 */
+  --color4: #DDC4D5;
+  --color5: #BD9DB3;
+  --color6: #9C7590;
+  --darkest: #382232
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -8,14 +21,30 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #AB644B;
+    background-color: var(--color1);
     padding: 0;
+}
+
+.title {
+    text-align: center;
+    background-image:url("images/styling/orange_sequins.jpg");
+    background-size: cover; 
+    background-position: center;
+    width: 100vw;
 }
 
 .logo {
     font-size: 3rem;
     margin: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a {
+    color: var(--darkest);
+}
+
+a:hover {
+    color: black;
 }
 
 ul {
@@ -64,7 +93,7 @@ button, .btn {
     grid-column: span 2 / span 2;
     grid-row: span 5 / span 5;
     grid-row-start: 2;
-    background-color: #F1F3F4;
+    background-color: var(--color2);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,7 +106,7 @@ button, .btn {
     grid-column: span 2 / span 2;
     grid-column-start: 1;
     grid-row-start: 7;
-    background-color: #72383D;
+    background-color: var(--color3);
 }
 
 .div4 {
@@ -85,7 +114,25 @@ button, .btn {
     grid-row: span 2 / span 2;
     grid-column-start: 3;
     grid-row-start: 2;
-    background-color: #D2DCE6;
+    background-color: var(--color4);
+    position: relative;
+}
+
+.div5 {
+    grid-column: span 4 / span 4;
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 4;
+    background-color: var(--color5);
+    position: relative;
+}
+
+.div6 {
+    grid-column: span 4 / span 4;
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 6;
+    background-color: var(--color6);
     position: relative;
 }
 
@@ -116,26 +163,8 @@ button, .btn {
     object-fit: contain;
 } 
 
-.div5 {
-    grid-column: span 4 / span 4;
-    grid-row: span 2 / span 2;
-    grid-column-start: 3;
-    grid-row-start: 4;
-    background-color: #9CABB4;
-    position: relative;
-}
-
-.div6 {
-    grid-column: span 4 / span 4;
-    grid-row: span 2 / span 2;
-    grid-column-start: 3;
-    grid-row-start: 6;
-    background-color: #647687;
-    position: relative;
-}
-
 .lower-button {
-    background-color: #72383D;
+    background-color: var(--color3);
     color: #F1F3F4;
     font-size: 1.5rem;
 }
@@ -185,7 +214,7 @@ button, .btn {
     }
 
     .main-nav {
-        background-color: #72383D;
+        background-color: var(--color1);
         width: 100%;
         flex: 1 1 auto; /* trying to get the text to be even across the page (not working)*/
         color: #F1F3F4; /*font color not changing.. why!?*/
